@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="CodeMind AI — Your Intelligent Developer Workspace">
+  <title>CodeMind AI — Developer Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="index.html" aria-label="CodeMind AI home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span><strong>CodeMind AI</strong><small>Your Intelligent Developer Workspace</small></span>
+      </a>
+      <nav class="nav-groups" aria-label="Main navigation">
+        <div class="nav-label">WORKSPACE</div>
+        <a class="nav-link active" href="#dashboard" data-view="dashboard"><span>▦</span>Dashboard</a>
+        <button class="nav-link nav-toggle" data-toggle="ai-sub"><span>✦</span>AI Workspace <b>⌄</b></button>
+        <div class="subnav" id="ai-sub">
+          <a href="pages/ai-chat.html">AI Chat</a><a href="pages/code-generator.html">Code Generator</a>
+          <a href="pages/code-explainer.html">Code Explainer</a><a href="pages/debugger.html">AI Debugger</a>
+        </div>
+        <button class="nav-link nav-toggle" data-toggle="tools-sub"><span>⌘</span>Developer Tools <b>⌄</b></button>
+        <div class="subnav" id="tools-sub">
+          <a href="pages/json-formatter.html">JSON Formatter</a><a href="pages/html-formatter.html">HTML Formatter</a>
+          <a href="pages/css-formatter.html">CSS Formatter</a><a href="pages/js-formatter.html">JavaScript Formatter</a>
+          <a href="pages/regex-tester.html">Regex Tester</a>
+        </div>
+        <a class="nav-link" href="pages/playground.html"><span>▷</span>Playground</a>
+        <a class="nav-link" href="pages/project-generator.html"><span>▣</span>Project Tools</a>
+        <a class="nav-link" href="pages/documentation.html"><span>▤</span>Documentation</a>
+        <div class="nav-label separated">PERSONAL</div>
+        <a class="nav-link" href="pages/history.html"><span>◷</span>History</a>
+        <a class="nav-link" href="pages/settings.html"><span>⚙</span>Settings</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="mascot-card"><div class="rocket">🚀</div><strong>Build something great</strong><p>Your next idea starts here.</p><a href="pages/playground.html" class="small-cta">Open Playground →</a></div>
+        <div class="sidebar-foot"><span class="status-dot"></span> System ready <span class="version">v0.2.0</span></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu icon-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <label class="searchbox"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search tools, features, or ask AI..."><kbd>Ctrl K</kbd></label>
+        <div class="top-actions"><button class="icon-btn" aria-label="Notifications">♧<i class="notification-dot"></i></button><div class="profile-wrap">
+            <button class="profile" id="profileBtn" type="button" aria-expanded="false" aria-controls="profileMenu">
+              <span class="avatar">👨🏻‍💻</span><span class="profile-text">Hello, Developer!<small>Workspace account</small></span><span class="profile-chevron">⌄</span>
+            </button>
+            <div class="profile-menu" id="profileMenu" hidden>
+              <div class="profile-menu-head"><span class="avatar">👨🏻‍💻</span><span><b>Developer</b><small>Local workspace</small></span></div>
+              <a href="pages/history.html">◷ <span>Activity history</span></a>
+              <a href="pages/documentation.html">▤ <span>Documentation</span></a>
+              <a href="pages/settings.html">⚙ <span>Settings</span></a>
+              <div class="profile-menu-note">CodeMind AI · MVP v0.2.1</div>
+            </div>
+          </div></div>
+      </header>
+
+      <div class="content" id="dashboard">
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow"><span class="live-dot"></span> YOUR DEVELOPER WORKSPACE</span>
+            <h1>Code smarter.<br>Build <em>better.</em></h1>
+            <p>One workspace for AI coding assistance, developer utilities, and web experiments. Turn ideas into working projects.</p>
+            <div class="hero-actions"><a class="btn btn-primary" href="pages/ai-chat.html">Explore AI Workspace <span>↗</span></a><a class="btn btn-ghost" href="pages/playground.html">Open Playground</a></div>
+            <div class="hero-meta"><span>✦ AI-assisted workflow</span><span>⌘ Developer tools</span><span>▣ Live playground</span></div>
+          </div>
+          <div class="hero-art" aria-label="Friendly coding robot illustration">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="code-float">&lt;code /&gt;</div>
+            <div class="robot"><div class="antenna"></div><div class="robot-head"><div class="robot-eyes"><i></i><i></i></div><div class="robot-smile"></div></div><div class="robot-body"><span>✦</span></div><div class="robot-arm left"></div><div class="robot-arm right"></div></div>
+            <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div><div class="spark spark-c">✳</div>
+            <div class="art-caption">READY TO CREATE <b>●</b></div>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><span class="section-kicker">GET STARTED</span><h2>Quick access <span>⚡</span></h2></div><a href="#all-tools" class="text-link">All tools ↗</a></div>
+          <div class="quick-grid">
+            <a class="quick-card" href="pages/ai-chat.html"><span class="quick-icon green">✦</span><strong>AI Chat</strong><small>Talk through your ideas</small><span class="card-arrow">↗</span></a>
+            <a class="quick-card" href="pages/code-generator.html"><span class="quick-icon cyan">&lt;/&gt;</span><strong>Code Generator</strong><small>Generate code with AI</small><span class="card-arrow">↗</span></a>
+            <a class="quick-card" href="pages/code-explainer.html"><span class="quick-icon violet">◉</span><strong>Code Explainer</strong><small>Understand complex code</small><span class="card-arrow">↗</span></a>
+            <a class="quick-card" href="pages/debugger.html"><span class="quick-icon orange">⌁</span><strong>AI Debugger</strong><small>Investigate code errors</small><span class="card-arrow">↗</span></a>
+          </div>
+        </section>
+
+        <section class="lower-grid" id="all-tools">
+          <div class="panel activity-panel">
+            <div class="panel-heading"><div><span class="section-kicker">YOUR WORKSPACE</span><h2>Developer tools</h2></div><span class="panel-icon">⌘</span></div>
+            <div class="tool-list">
+              <a href="pages/json-formatter.html"><span class="tool-symbol green">{" "}</span><span><b>JSON Formatter</b><small>Format and validate JSON data</small></span><span class="row-arrow">↗</span></a>
+              <a href="pages/html-formatter.html"><span class="tool-symbol orange">▤</span><span><b>HTML Formatter</b><small>Clean up HTML markup</small></span><span class="row-arrow">↗</span></a>
+              <a href="pages/css-formatter.html"><span class="tool-symbol cyan">#</span><span><b>CSS Formatter</b><small>Organize stylesheets</small></span><span class="row-arrow">↗</span></a>
+              <a href="pages/js-formatter.html"><span class="tool-symbol yellow">JS</span><span><b>JavaScript Formatter</b><small>Beautify JavaScript code</small></span><span class="row-arrow">↗</span></a>
+              <a href="pages/regex-tester.html"><span class="tool-symbol violet">.*</span><span><b>Regex Tester</b><small>Test regular expressions</small></span><span class="row-arrow">↗</span></a>
+            </div>
+          </div>
+          <div class="panel activity-panel">
+            <div class="panel-heading"><div><span class="section-kicker">BUILD & EXPERIMENT</span><h2>Project workspace</h2></div><span class="panel-icon">▣</span></div>
+            <div class="project-feature"><div class="project-illustration">⌨️</div><div><b>Code Playground</b><p>Experiment with HTML, CSS, and JavaScript in one place.</p></div><a class="btn btn-primary btn-small" href="pages/playground.html">Launch ↗</a></div>
+            <div class="project-feature compact"><div class="project-illustration purple-bg">📁</div><div><b>Project Structure Generator</b><p>Plan a clean project folder structure.</p></div><a class="row-arrow" href="pages/project-generator.html">↗</a></div>
+          </div>
+        </section>
+        <footer class="footer"><span><b class="footer-mark">&lt;/&gt;</b> CodeMind AI <small>v0.2.0 · MVP frontend</small></span><span>Build · Learn · Create</span><span><a href="pages/documentation.html">Documentation</a><a href="pages/settings.html">Settings</a></span></footer>
+      </div>
+    </main>
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
